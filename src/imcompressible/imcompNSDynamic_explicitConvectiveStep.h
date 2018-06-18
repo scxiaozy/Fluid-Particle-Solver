@@ -44,8 +44,8 @@ namespace fps
 
     //Firslty calculate the volume flux and the source term
     for (llabel nc = 0; nc < nCells; ++nc){
-      rhsConvective[nc].assign(0.0);
-      rhsSource[nc].assign(0.0);
+      rhsConvective[nc].init(0.0);
+      rhsSource[nc].init(0.0);
       //Integration over volume
       const size_t vips = T::refFrame::nVolIntPoints;
       //Firstly calculate u,v,w in each gaussian integration point

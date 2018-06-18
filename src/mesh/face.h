@@ -9,6 +9,7 @@ namespace fps
   class face
   {
     public:
+      llabel oldFaceIdx;
       llabelPair lcellIdx;
       glabelPair gcellIdx;
       //The side of the left face
@@ -31,7 +32,7 @@ namespace fps
       face (const llabelPair& lcell = llabelPair(-1,-1),
           const glabelPair& gcell = glabelPair(-1,-1),
           const intPair& pIdx= intPair(-1,-1))
-        : lcellIdx(lcell), gcellIdx(gcell),
+        : oldFaceIdx(-1), lcellIdx(lcell), gcellIdx(gcell),
         firstSide(-1), secondSide(-1), firstFaceChildIdx(-1), secondFaceChildIdx(-1),
         orientation(-1), firstCellType(-1), secondCellType(-1),isHanging(0), patchIdx(pIdx)
       {

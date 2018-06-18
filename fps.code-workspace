@@ -2,12 +2,16 @@
 	"folders": [
 		{
 			"path": "src"
+		},
+		{
+			"path": "tools"
 		}
 	],
 	"settings": {
 		"files.associations": {
 			"string": "cpp",
-			"vector": "cpp"
+			"vector": "cpp",
+			"complex": "cpp"
 		}
 	}
 }

@@ -35,12 +35,12 @@ namespace fps
         matrix(double* data, size_t m, size_t n);
         void assign(float* data, size_t m, size_t n);
         void assign(double* data, size_t m, size_t n);
-        inline void assign(real data){
+        inline void init(real data){
           for (int ii = 0; ii < m_*n_; ++ii){
             matrix_[ii] = data;
           }
         };
-        inline void assign(real data, size_t m, size_t n);
+        inline void init(real data, size_t m, size_t n);
         inline void swap(matrix& m);
         const std::pair<size_t,size_t> size()const{return std::pair<size_t,size_t>(m_,n_);}
         inline real* operator[](int i);
@@ -126,7 +126,7 @@ namespace fps
         matrix_[ii] = data[ii];
       }
     }
-    inline void matrix::assign(real data, size_t m, size_t n){
+    inline void matrix::init(real data, size_t m, size_t n){
       if(capacity_ < m*n){
         delete[] matrix_;
         matrix_ = new real[m*n];

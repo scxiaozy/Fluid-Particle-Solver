@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jianhuapan/Projects/fluid_particle_solver/src
+CMAKE_SOURCE_DIR = /Users/jianhuapan/Projects/Fluid-Particle-Solver/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jianhuapan/Projects/fluid_particle_solver/src
+CMAKE_BINARY_DIR = /Users/jianhuapan/Projects/Fluid-Particle-Solver/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jianhuapan/Projects/fluid_particle_solver/src/CMakeFiles /Users/jianhuapan/Projects/fluid_particle_solver/src/imcompressible/CMakeFiles/progress.marks
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jianhuapan/Projects/fluid_particle_solver/src/CMakeFiles 0
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jianhuapan/Projects/Fluid-Particle-Solver/src/CMakeFiles /Users/jianhuapan/Projects/Fluid-Particle-Solver/src/imcompressible/CMakeFiles/progress.marks
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jianhuapan/Projects/Fluid-Particle-Solver/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/clean
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/preinstall
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/preinstall
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 imcompressible/CMakeFiles/IMCOMP.dir/rule:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/CMakeFiles/IMCOMP.dir/rule
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f CMakeFiles/Makefile2 imcompressible/CMakeFiles/IMCOMP.dir/rule
 .PHONY : imcompressible/CMakeFiles/IMCOMP.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ IMCOMP: imcompressible/CMakeFiles/IMCOMP.dir/rule
 
 # fast build rule for target.
 IMCOMP/fast:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/build
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/build
 .PHONY : IMCOMP/fast
 
 test.o: test.cpp.o
@@ -131,7 +131,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.o
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -140,7 +140,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.i
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -149,7 +149,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.s
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(MAKE) -f imcompressible/CMakeFiles/IMCOMP.dir/build.make imcompressible/CMakeFiles/IMCOMP.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/jianhuapan/Projects/fluid_particle_solver/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/jianhuapan/Projects/Fluid-Particle-Solver/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

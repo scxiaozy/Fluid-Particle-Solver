@@ -572,6 +572,10 @@ namespace fps
     //Meanwhile, the cece information are store in p8estCeCe_ structure
     p8est_iterate(p8estPtr_, p8estGhostPtr_, &ctx,
         updateMeshIterVol<T>, updateMeshIterFace<T>, NULL,  NULL);
+    
+    for (int ii = 0; ii < this->nFaces_; ++ii){
+      this->faces_[ii].oldFaceIdx = faceTag[ii];
+    }
 
     //Read the cece and cefa data from p8estCece_ structure
     for (int ii = 0; ii < this->nCells_; ++ii){
